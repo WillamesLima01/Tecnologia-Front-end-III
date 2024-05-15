@@ -1,21 +1,18 @@
 {
-    "alunos": [
+    "noticias": [
         {
             "id": 1,
             "titulo": "UNIESP é ponto de entrega de doações para o Rio Grande do Sul",
             "subtitulo": "O UNIESP será um dos pontos de recebimento de doações para as vítimas das enchentes no Rio Grande do Sul. Até esta sábado (11), os interessados poderão oferecer ajuda através dos seguintes itens: água mineral, material de higiene pessoal, colchões em bom estado, roupas, fraldas e outros semelhantes.",
-            "texto": "O UNIESP será um dos pontos de recebimento de doações para as vítimas das enchentes no Rio Grande do Sul. Até esta sábado (11), os interessados poderão oferecer ajuda através dos seguintes itens: água mineral, material de higiene pessoal, colchões em bom estado, roupas, fraldas e outros semelhantes. A entrega deve ser feita na Central de Relacionamento, que fica no térreo do Bloco Central, das 8h às 21h até sexta e das 9h a 12h no sábado.
-            A ação é uma parceria com a Beats Run. Na sexta e no sábado, haverá arrecadação durante a entrega dos kits da corrida. Os organizadores pedem para que os participantes levem doações na ocasião.
-            É importante pontuar que não estão sendo recebidas doações de alimentos. Os itens arrecadados serão transportados através de companhias aéreas para as cidades afetadas pelas cheias no Sul do País. Segundo os dados da Defesa Civil, a tragédia afetou cerca de 873 mil pessoas em 364 municípios do Rio Grande do Sul. São registradas quase 150 mil pessoas que foram tiradas de suas casas."
+            "texto": "municípios do Rio Grande do Sul. São registradas quase 150 mil pessoas que foram tiradas de suas casas."
         },
 
         {
             "id": 2,
             "titulo": "UNIESP lança cursos semipresenciais de Farmácia e Biomedicina",
             "subtitulo": "Os cursos de Biomedicina e Farmácia do UNIESP também estarão disponíveis na modalidade semipresencial. Os interessados já podem se matricular nessas graduações, com aulas on-line e conteúdo disponível para estudar onde quiser, além de um encontro presencial semanal, no polo João Pessoa.",
-            "texto": "Ambos os cursos, bem como suas opções presenciais, são coordenados pela professora Juliana Carreiro, que explicou que o lançamento na modalidade semipresencial é justificada pela alta procura dessas graduações no UNIESP. O mercado vem mudando e assim o estilo de vida das pessoas também. Penso que a educação precisa acompanhar tais mudanças e esse acompanhamento é uma forte característica do nosso trabalho aqui no UNIESP.
-                    Vale lembrar que o diploma de um curso semipresencial tem a mesma validade de um presencial. O aluno desta nova opção pode contar com todo suporte da estrutura física do UNIESP, contando com os modernos laboratórios, bem como a biblioteca e demais setores da instituição. Além disso, ele conta com a Plataforma de Aprendizagem, que permite ao graduando estudar de onde quiser, seja pelo computador, pelo celular, pelo tablet ou demais dispositivos.
-                    O estudante também está apto a participar dos diversos projetos oferecidos pela coordenação. Em casos de dúvidas, o interessado pode entrar em contato com a coordenação pelo número 2106-3850 ou enviar um e-mail para julianacarreiro@iesp.edu.br."
+            "texto": "Plataforma de Aprendizagem, que permite ao graduando estudar de onde quiser, seja pelo computador, pelo celular, pelo tablet ou demais dispositivos."
+                    
         }
     ]
 }
