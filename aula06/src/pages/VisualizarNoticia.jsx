@@ -1,31 +1,35 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Box, Typography, Paper } from '@mui/material'
 
-const VisualizarNoticia = () => {
+const VisualizaNoticia = () => {
 
     const { id } = useParams()
 
     const url = `http://localhost:3000/noticias/${id}`
 
-    const [visualizarNoticia, setVisualizarNoticia] = useState({})
+    const [visualizaNoticia, setVisualizaNoticia] = useState({})
 
     useEffect(() => {
-        async function fetchData(){
+        async function fetchData() {
           const res = await fetch(url)
           const data = await res.json()
     
-          setVisualizarNoticia(data)
+          setVisualizaNoticia(data)
         }
         fetchData()
-      }, [])
+      }, [id])
 
   return (
-    <div>
-        <h2>{visualizarNoticia.titulo}</h2>
-        <h3>{visualizarNoticia.subtitulo}</h3>
-        <p>{visualizarNoticia.texto}</p>
-    </div>
+    <Box sx={{ p: 4 }}>
+      <Paper elevation={3} sx={{ p: 3 }}>
+        <Typography variant="h4" gutterBottom>{visualizaNoticia.titulo}</Typography>
+        <Typography variant="h6" gutterBottom>{visualizaNoticia.subtitulo}</Typography>
+        <Typography variant="body1">{visualizaNoticia.texto}</Typography>
+      </Paper>
+    </Box>
   )
 }
 
-export default VisualizarNoticia
+export default VisualizaNoticia
