@@ -1,12 +1,20 @@
-import React from 'react'
-import GerenciamentoAlunos from './components/GerenciamentoAlunos'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GerenciamentoAlunosForm from './components/GerenciamentoAlunosForm';
+import GerenciamentoAlunosList from './components/GerenciamentoAlunosList';
 
 const App = () => {
   return (
-    <div>
-      <GerenciamentoAlunos />
-    </div>
-  )
-}
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<GerenciamentoAlunosList />} />
+        <Route path="/add-aluno" element={<GerenciamentoAlunosForm />} />
+      </Routes>
+    </BrowserRouter>    
+    </>
+    
+  );
+};
 
-export default App
+export default App;

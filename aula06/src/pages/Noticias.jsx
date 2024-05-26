@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link} from 'react-router-dom'
 
-const url = `http://localhost:3000/noticias/`
-
 const Noticias = () => {
 
   const [ noticias, setNoticias ] = useState([])
   
   useEffect(() => {
     async function fetchData(){
-      const res = await fetch(url)
+      const res = await fetch('/noticias')
       const data = await res.json()
 
       setNoticias(data)

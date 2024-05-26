@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+import axios from '../../api'
 import { Box, Typography, Paper, List, ListItem, ListItemText } from '@mui/material'
-
-const url = "http://localhost:3000/noticias"
 
 const NoticiasAxios = () => {
 
@@ -12,7 +10,7 @@ const NoticiasAxios = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await axios.get(url)
+        const res = await axios.get('/noticias')
         setNoticias(res.data)
       } catch (error) {
         console.error("Erro ao buscar as notícias: ", error)

@@ -1,9 +1,7 @@
 import React, { useState} from 'react'
-import axios from 'axios'
+import axios from '../../../api'
 import { useNavigate } from 'react-router-dom'
 import { Button, TextField, Typography, Box } from '@mui/material'
-
-const url = "http://localhost:3000/noticias"
 
 const CadastroNoticia = () => {
 
@@ -16,7 +14,7 @@ const CadastroNoticia = () => {
     const cadastrarNoticia = async (e) => {
         e.preventDefault()
         try {
-          await axios.post(url, { titulo, subtitulo, texto })
+          await axios.post('/noticias', { titulo, subtitulo, texto })
           navigate('/admin-noticias')
         } catch (error) {
           console.error("Erro ao cadastrar a notícia: ", error)
